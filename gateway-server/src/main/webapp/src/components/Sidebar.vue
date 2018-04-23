@@ -17,6 +17,7 @@
 </script>
 <style>
     .sidenav {
+        width: 275px;
         z-index: 1;
         left: 0;
         background-color: #f9f9f9;

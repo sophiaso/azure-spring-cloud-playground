@@ -1,16 +1,10 @@
 <template>
     <div id="main">
         <Nav></Nav>
-        <b-container fluid>
-            <b-row>
-                <b-col sm="3">
-                    <Sidebar></Sidebar>
-                </b-col>
-                <b-col sm="9">
-                    <router-view></router-view>
-                </b-col>
-            </b-row>
-        </b-container>
+        <div id="content">
+            <Sidebar></Sidebar>
+            <router-view></router-view>
+        </div>
     </div>
 </template>
 
@@ -38,5 +32,11 @@
         height: 100%;
         margin: 0;
         padding: 0;
+    }
+
+    #content {
+        display: flex;
+        flex-flow: row wrap;
+        height: inherit;
     }
 </style>
