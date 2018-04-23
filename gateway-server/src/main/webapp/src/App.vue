@@ -1,9 +1,16 @@
 <template>
-    <div>
+    <div id="main">
         <Nav></Nav>
-        <div>
-            <Sidebar></Sidebar>
-        </div>
+        <b-container fluid>
+            <b-row>
+                <b-col sm="3">
+                    <Sidebar></Sidebar>
+                </b-col>
+                <b-col sm="9">
+                    <router-view></router-view>
+                </b-col>
+            </b-row>
+        </b-container>
     </div>
 </template>
 
@@ -26,3 +33,10 @@
         }
     };
 </script>
+<style>
+    html, body, #main {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+</style>
