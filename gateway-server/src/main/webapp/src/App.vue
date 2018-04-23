@@ -1,15 +1,28 @@
 <template>
     <div>
-        {{ msg }}
+        <Nav></Nav>
+        <div>
+            <Sidebar></Sidebar>
+        </div>
     </div>
 </template>
 
 <script>
+    import Vue from 'vue'
+    import { Layout } from 'bootstrap-vue/es/components'
+    import Nav from './components/Nav'
+    import Sidebar from './components/Sidebar'
+
+    Vue.use(Layout);
+
     export default {
         data: function() {
             return {
-                msg: 'Hello World'
             }
+        },
+        components: {
+            Nav,
+            Sidebar
         }
     };
 </script>
