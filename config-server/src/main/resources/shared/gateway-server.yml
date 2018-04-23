@@ -1,0 +1,16 @@
+spring:
+  resources:
+    static-locations: "classpath:/static/dist/"
+  cloud:
+    gateway:
+      routes:
+      - id: websocket
+        uri: ws://message-service
+        order: 9000
+        predicates:
+        - Path=/message/playground-message/**/**/websocket
+      - id: message-service
+        uri: lb://message-service
+        order: 10000
+        predicates:
+        - Path=/message/**

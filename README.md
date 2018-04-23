@@ -1,0 +1,1 @@
+This project is a [Spring Cloud](http://projects.spring.io/spring-cloud/) structured project.

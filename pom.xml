@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.microsoft.azure.playground</groupId>
+    <artifactId>azure-spring-cloud-playground</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>Azure Spring Cloud Playground</name>
+    <description>Azure Spring Cloud Playground</description>
+    <url>https://github.com/Microsoft/azure-spring-cloud-playground</url>
+
+    <licenses>
+        <license>
+            <name>MIT</name>
+            <url>https://github.com/Microsoft/azure-spring-cloud-playground/blob/master/LICENSE</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <organization>
+        <name>Microsoft</name>
+        <url>https://www.microsoft.com</url>
+    </organization>
+
+    <modules>
+        <module>config-server</module>
+        <module>eureka-server</module>
+        <module>gateway-server</module>
+        <module>playground-parent</module>
+        <module>message-service</module>
+    </modules>
+
+</project>
