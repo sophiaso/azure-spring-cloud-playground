@@ -1,8 +1,8 @@
 <template>
     <div class="sidenav">
         <router-link to="/about">About</router-link>
-        <a href="azure-spring-cosmosdb">Azure CosmosDB</a>
-        <a href="contact">Contact</a>
+        <router-link to="/azure-spring-cosmosdb">Azure CosmosDB</router-link>
+        <router-link to="/contact">Contact</router-link>
     </div>
 </template>
 <script>
