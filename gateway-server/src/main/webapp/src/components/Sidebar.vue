@@ -1,6 +1,6 @@
 <template>
     <div class="sidenav">
-        <a href="about">About</a>
+        <router-link to="/about">About</router-link>
         <a href="azure-spring-cosmosdb">Azure CosmosDB</a>
         <a href="contact">Contact</a>
     </div>
@@ -17,9 +17,6 @@
 </script>
 <style>
     .sidenav {
-        height: 100%;
-        width: 240px;
-        position: fixed;
         z-index: 1;
         left: 0;
         background-color: #f9f9f9;

@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="nav">
         <b-navbar toggleable="md" type="dark" variant="dark">
             <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
             <b-navbar-brand href="#">Azure Spring Cloud Playground</b-navbar-brand>
